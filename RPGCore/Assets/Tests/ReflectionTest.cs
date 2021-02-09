@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Core.Tools;
 using NUnit.Framework;
+using UnityEngine;
 
 namespace Tests
 {
@@ -11,12 +13,14 @@ namespace Tests
         {
             Names<int> names = new Names<int>();
 
-            List<int> list = names.GetAllValues();
+            List<int> list = names.GetAllValues().ToList();
 
             Assert.Contains(names.bed,      list);
             Assert.Contains(names.cupboard, list);
             Assert.Contains(names.window,   list);
             Assert.Contains(names.table,    list);
+            
+            Assert.AreEqual(list.Count, 4);
         }
     }
 }

@@ -5,11 +5,16 @@ namespace Core.Tools
 {
     public class Names<T>
     {
-        public T bed;
-        public T cupboard;
-        public T table;
-        public T window;
+        public T     bed;
+        public T     cupboard;
+        public short someShort;
 
-        public List<T> GetAllValues() => GetType().GetFields().Select(t => (T) t.GetValue(this)).ToList();
+        public string someString;
+        public uint   someUint;
+        public T      table;
+        public T      window;
+
+        public IEnumerable<T> GetAllValues() => GetType().GetFields().Where(fi => fi.FieldType == typeof(T))
+                                                         .Select(t => (T) t.GetValue(this));
     }
 }
