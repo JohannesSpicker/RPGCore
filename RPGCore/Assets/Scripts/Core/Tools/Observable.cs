@@ -2,11 +2,23 @@
 
 namespace Core.Tools
 {
-    public class Observable<T> where T : class
+    public class Observable<T>
     {
-        private T              myField;
-        private Action<T>      onValueChanged;
-        private IObservable<T> observable;
+        private Action<T> onValueChanged;
+        private T         value;
+
+        public T Value
+        {
+            get => value;
+            set
+            {
+                this.value = value;
+                onValueChanged?.Invoke(Value);
+            }
+        }
+
+        public void Subscribe(Action<T> observer) => onValueChanged += observer;
+        public void Unsubscribe(Action<T> observer) => onValueChanged -= observer;
     }
 
     public class Observer<T> : IObserver<T>
@@ -16,8 +28,18 @@ namespace Core.Tools
         public void OnNext(T          value) => throw new NotImplementedException();
     }
 
-    public class MyObservable<T> : IObservable<T>
+    public class SomeClass
     {
-        public IDisposable Subscribe(IObserver<T> observer) => throw new NotImplementedException();
+        private Observable<float> someFloat = new Observable<float>();
+
+        private void somefunc()
+        {
+            someFloat.Subscribe(myAction);
+        }
+        
+        private void myAction(float number){}
+        
+        
+        
     }
 }
