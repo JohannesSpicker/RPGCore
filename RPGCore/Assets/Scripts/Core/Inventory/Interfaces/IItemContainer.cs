@@ -7,11 +7,4 @@ namespace Core.Inventory.Interfaces
         uint Remove(T   item, uint amount);
         uint Clear();
     }
-
-    public interface IItem { }
-
-    public interface IInventory<in T> : IItemContainer<T> where T : IItem
-    {
-        
-    }
 }

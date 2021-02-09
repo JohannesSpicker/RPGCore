@@ -1,0 +1,16 @@
+{
+    "name": "InventoryDisplays",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1b73738509d538645873ba61c8834f9c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

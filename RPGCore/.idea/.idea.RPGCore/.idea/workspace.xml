@@ -13,9 +13,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Interfaces/IItemContainer.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Interfaces/IItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Reflection.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Names.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Interfaces/IItemContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/ReflectionTest.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nIwAb3O2sjxK7XD4s8WNbURMvz" />
@@ -59,7 +66,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611090771686</updated>
-      <workItem from="1611090775517" duration="1968000" />
+      <workItem from="1611090775517" duration="2570000" />
+      <workItem from="1612353490150" duration="648000" />
+      <workItem from="1612354517502" duration="5007000" />
+      <workItem from="1612789513347" duration="3382000" />
+      <workItem from="1612864927577" duration="4237000" />
     </task>
     <servers />
   </component>
@@ -75,6 +86,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
