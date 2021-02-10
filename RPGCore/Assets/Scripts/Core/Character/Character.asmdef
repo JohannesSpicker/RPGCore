@@ -1,10 +1,8 @@
 {
-    "name": "InventoryDisplays",
+    "name": "Character",
     "rootNamespace": "",
     "references": [
-        "GUID:1b73738509d538645873ba61c8834f9c",
-        "GUID:6055be8ebefd69e48b49212b09b47b2f",
-        "GUID:0d2a93c8382b8b046986d326a5adeba1"
+        "GUID:1b73738509d538645873ba61c8834f9c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

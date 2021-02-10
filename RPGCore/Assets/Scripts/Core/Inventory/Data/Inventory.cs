@@ -5,6 +5,7 @@ using Core.Inventory.Interfaces;
 
 namespace Core.Inventory.Data
 {
+    [Serializable]
     public class Inventory : IItemContainer<Item>
     {
         public Action<ItemSlot> onSlotAdded;

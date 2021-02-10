@@ -1,8 +1,10 @@
 ﻿using System;
 using Core.Inventory.Interfaces;
+using UnityEngine;
 
 namespace Core.Inventory.Data
 {
+    [Serializable]
     public class ItemSlot : IItemContainer<Item>
     {
         private uint         amount;

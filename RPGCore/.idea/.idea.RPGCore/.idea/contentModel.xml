@@ -9,6 +9,10 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Core" t="Include">
+            <e p="Character" t="Include">
+              <e p="Character.asmdef" t="Include" />
+              <e p="Character.cs" t="Include" />
+            </e>
             <e p="Inventory" t="Include">
               <e p="Data" t="Include">
                 <e p="Inventory.cs" t="Include" />
@@ -16,6 +20,7 @@
                 <e p="Item.cs" t="Include" />
                 <e p="ItemSlot.cs" t="Include" />
                 <e p="ItemType.cs" t="Include" />
+                <e p="StartInventory.cs" t="Include" />
               </e>
               <e p="Displays" t="Include">
                 <e p="InventoryDisplay.cs" t="Include" />
@@ -31,6 +36,7 @@
             <e p="Tools" t="Include">
               <e p="Names.cs" t="Include" />
               <e p="Observable.cs" t="Include" />
+              <e p="StaticObjectPool.cs" t="Include" />
               <e p="Tools.asmdef" t="Include" />
             </e>
           </e>
@@ -53,6 +59,7 @@
           </e>
         </e>
       </e>
+      <e p="Character.csproj" t="IncludeRecursive" />
       <e p="InventoryData.csproj" t="IncludeRecursive" />
       <e p="InventoryDisplays.csproj" t="IncludeRecursive" />
       <e p="InventoryInterfaces.csproj" t="IncludeRecursive" />
