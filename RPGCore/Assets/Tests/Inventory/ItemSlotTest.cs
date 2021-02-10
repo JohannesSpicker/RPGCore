@@ -42,7 +42,7 @@ namespace Tests
         }
 
         [Test]
-        public void SlotEmptyAfterRemoving([Random(0u, 100u, 5)]
+        public void EmptyAfterRemoving([Random(0u, 100u, 5)]
                                            uint amount)
         {
             Setup(out ItemSlot itemSlot, out Item item);
@@ -56,7 +56,7 @@ namespace Tests
         }
 
         [Test]
-        public void SlotEmptyAfterClear()
+        public void EmptyAfterClear()
         {
             Setup(out ItemSlot itemSlot, out Item item);
 

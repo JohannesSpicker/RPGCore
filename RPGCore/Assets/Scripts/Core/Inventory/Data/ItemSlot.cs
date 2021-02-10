@@ -5,11 +5,33 @@ namespace Core.Inventory.Data
 {
     public class ItemSlot : IItemContainer<Item>
     {
-        public Item Item   { get; private set; }
-        public uint Amount { get; private set; }
+        private uint         amount;
+        private Item         item;
+        
+        public Action<uint> onAmountChanged;
+        public Action<Item> onItemChanged;
 
-        public bool IsEmpty => Item == null || Amount == 0;
+        public uint Amount
+        {
+            get => amount;
+            private set
+            {
+                amount = value;
+                onAmountChanged?.Invoke(amount);
+            }
+        }
 
+        public Item Item
+        {
+            get => item;
+            private set
+            {
+                item = value;
+                onItemChanged?.Invoke(item);
+            }
+        }
+
+        public bool IsEmpty             => Item == null || Amount == 0;
         public uint Contains(Item item) => Item == item ? Amount : 0;
 
         public uint Add(Item item, uint amount)
@@ -25,7 +47,7 @@ namespace Core.Inventory.Data
 
         public uint Remove(Item item, uint amount)
         {
-            var remove = Math.Min(amount, Contains(item));
+            uint remove = Math.Min(amount, Contains(item));
 
             Amount -= remove;
 

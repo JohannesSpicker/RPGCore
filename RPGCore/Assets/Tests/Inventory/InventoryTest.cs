@@ -85,7 +85,18 @@ namespace Tests
         }
 
         #endregion
+        
+        [Test]
+        public void EmptyAfterClear()
+        {
+            Setup(out Inventory inventory, out Item item);
 
+            inventory.Add(item, 1);
+            inventory.Clear();
+
+            Assert.IsTrue(inventory.IsEmpty);
+            Assert.AreEqual(inventory.Contains(item), 0);
+        }
         #region Setup
 
         private static void Setup(out Inventory inventory, out Item item)

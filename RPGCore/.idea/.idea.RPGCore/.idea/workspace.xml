@@ -40,19 +40,19 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Interfaces/IItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Reflection.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/InventoryDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/SlotDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/InventoryTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/ItemType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Item.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/ReflectionTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Names.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Observable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Interfaces/IItemContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Observable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/ItemSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/Inventory/ItemSlotTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/Inventory/InventoryTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/InventoryDisplay.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nIwAb3O2sjxK7XD4s8WNbURMvz" />

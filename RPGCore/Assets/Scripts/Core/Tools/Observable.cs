@@ -21,25 +21,17 @@ namespace Core.Tools
         public void Unsubscribe(Action<T> observer) => onValueChanged -= observer;
     }
 
-    public class Observer<T> : IObserver<T>
+    public class Observer<T>
     {
-        public void OnCompleted()            => throw new NotImplementedException();
-        public void OnError(Exception error) => throw new NotImplementedException();
-        public void OnNext(T          value) => throw new NotImplementedException();
-    }
-
-    public class SomeClass
-    {
-        private Observable<float> someFloat = new Observable<float>();
-
-        private void somefunc()
+        private Action<T>     action;
+        private Observable<T> observable;
+        
+        public Observer(Observable<T> observable, Action<T> action)
         {
-            someFloat.Subscribe(myAction);
+            this.action     = action;
+            this.observable = observable;
+            
+            observable.Subscribe(action);
         }
-        
-        private void myAction(float number){}
-        
-        
-        
     }
 }

@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 
-namespace UnityTemplateProjects.Core.Inventory.Displays
+namespace Core.Inventory.Displays
 {
     public class InventoryDisplay : MonoBehaviour
     {
+        private Data.Inventory inventory;
+        
         
     }
 }
