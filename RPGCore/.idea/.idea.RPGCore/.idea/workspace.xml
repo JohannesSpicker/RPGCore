@@ -55,8 +55,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Character/Character.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/SlotDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/ObjectPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/StaticObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/InventoryDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/StaticObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/PrefabObjectPool.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nIwAb3O2sjxK7XD4s8WNbURMvz" />

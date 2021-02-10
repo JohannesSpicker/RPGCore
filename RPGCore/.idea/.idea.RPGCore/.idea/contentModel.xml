@@ -36,6 +36,7 @@
             <e p="Tools" t="Include">
               <e p="Names.cs" t="Include" />
               <e p="Observable.cs" t="Include" />
+              <e p="PrefabObjectPool.cs" t="Include" />
               <e p="StaticObjectPool.cs" t="Include" />
               <e p="Tools.asmdef" t="Include" />
             </e>

@@ -29,9 +29,12 @@ namespace Core.Inventory.Displays
 
         public void Setup(Data.Inventory inventory)
         {
+            if (inventory != null)
+                Deregister();
+
             this.inventory = inventory;
 
-            slotDisplays.ReleaseAll();
+            Register();
 
             foreach (ItemSlot slot in inventory.Slots)
                 AddSlotDisplay(slot);
