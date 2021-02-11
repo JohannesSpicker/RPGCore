@@ -42,22 +42,25 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Reflection.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/InventoryTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/ItemType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Item.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/ReflectionTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Names.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Interfaces/IItemContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Observable.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/Inventory/ItemSlotTest.cs" />
-      <option value="$PROJECT_DIR$/Assets/Tests/Inventory/InventoryTest.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Inventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/ItemSlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/StartInventory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Character/Character.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/SlotDisplay.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/ObjectPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/InventoryDisplay.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/StaticObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/PrefabObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Item.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/StartInventory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/Inventory/InventoryTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/ItemSlot.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/ElegantPrefabObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/StaticObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/ObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Inventory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Encounters/Encounter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/SlotDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/SlotDisplayEmbellishment.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/InventoryDisplay.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nIwAb3O2sjxK7XD4s8WNbURMvz" />
@@ -85,10 +88,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21364">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="21364" />
+      <option name="pid" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -108,6 +111,8 @@
       <workItem from="1612354517502" duration="5007000" />
       <workItem from="1612789513347" duration="3382000" />
       <workItem from="1612864927577" duration="24486000" />
+      <workItem from="1612975333406" duration="3356000" />
+      <workItem from="1613001025799" duration="3775000" />
     </task>
     <servers />
   </component>

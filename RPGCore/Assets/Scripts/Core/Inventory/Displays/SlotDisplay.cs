@@ -1,8 +1,9 @@
-﻿using Core.Inventory.Data;
+﻿using System;
+using Core.Inventory.Data;
 using TMPro;
 using UnityEngine;
 
-namespace UnityTemplateProjects.Core.Inventory.Displays
+namespace Core.Inventory.Displays
 {
     public class SlotDisplay : MonoBehaviour
     {
@@ -11,6 +12,8 @@ namespace UnityTemplateProjects.Core.Inventory.Displays
         private TextMeshPro nameDisplay;
         public  ItemSlot    Slot { get; private set; }
 
+        public Action<SlotDisplay> onSelect;
+        
         public void Setup(ItemSlot slot)
         {
             Slot = slot;
@@ -24,5 +27,7 @@ namespace UnityTemplateProjects.Core.Inventory.Displays
 
         private void RefreshAmountDisplay(uint amount) => amountDisplay.text = amount.ToString();
         private void RefreshItemDisplay(Item   item)   => nameDisplay.text = item.ToString();
+
+        public void Select() => onSelect?.Invoke(this);
     }
 }

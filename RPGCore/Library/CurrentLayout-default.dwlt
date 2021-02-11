@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Test Runner
   m_RootView: {fileID: 5}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -42,7 +42,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 463
-    height: 478
+    height: 551
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 21}
@@ -68,13 +68,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 509
+    y: 436
     width: 1367
-    height: 478
-  m_MinSize: {x: 333, y: 271}
-  m_MaxSize: {x: 14003, y: 10021}
+    height: 551
+  m_MinSize: {x: 331, y: 271}
+  m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
-  controlID: 154
+  controlID: 150
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -194,9 +194,9 @@ MonoBehaviour:
     width: 1920
     height: 987
   m_MinSize: {x: 681, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MaxSize: {x: 18002, y: 14042}
   vertical: 0
-  controlID: 190
+  controlID: 19
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,9 +219,9 @@ MonoBehaviour:
     width: 1367
     height: 987
   m_MinSize: {x: 405, y: 492}
-  m_MaxSize: {x: 14003, y: 14042}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 76
+  controlID: 20
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,11 +243,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1367
-    height: 509
+    height: 436
   m_MinSize: {x: 405, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 77
+  controlID: 21
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -266,9 +266,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 266
-    height: 509
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 436
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -292,9 +292,9 @@ MonoBehaviour:
     x: 266
     y: 0
     width: 696
-    height: 509
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+    height: 436
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 18}
@@ -319,7 +319,7 @@ MonoBehaviour:
     x: 962
     y: 0
     width: 405
-    height: 509
+    height: 436
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
@@ -345,9 +345,9 @@ MonoBehaviour:
     x: 463
     y: 0
     width: 904
-    height: 478
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+    height: 551
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -403,15 +403,15 @@ MonoBehaviour:
     x: 2186
     y: 73
     width: 694
-    height: 488
+    height: 415
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 209
+    ID: 198
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 313
-    - 105
+    - 259
+    - 86
     relativeSizes:
     - 0.75
     - 0.25
@@ -421,7 +421,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 418
+    lastTotalSize: 345
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -473,7 +473,7 @@ MonoBehaviour:
       name: RPGCore
       fullName: RPGCore
       resultStatus: 1
-      duration: 0.3540808
+      duration: 0.0421464
       messages: 
       output: 
       stacktrace: 
@@ -489,7 +489,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: D:/GitRepos/RPGCore/RPGCore/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.2280541
+      duration: 0.0095037
       messages: 
       output: 
       stacktrace: 
@@ -505,7 +505,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.2262869
+      duration: 0.0082885
       messages: 
       output: 
       stacktrace: 
@@ -517,11 +517,1074 @@ MonoBehaviour:
       parentId: 1003
       parentUniqueId: '[Tests.dll][suite]'
     - id: 1001
+      uniqueId: Tests.dll/Tests/[Tests][Tests.InventoryTest][suite]
+      name: InventoryTest
+      fullName: Tests.InventoryTest
+      resultStatus: 1
+      duration: 0.0047014
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1007
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1008
+      uniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.AddManyItems][suite]
+      name: AddManyItems
+      fullName: Tests.InventoryTest.AddManyItems
+      resultStatus: 1
+      duration: 0.0063215
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.InventoryTest][suite]
+    - id: 5483
+      uniqueId: Tests.dll/Tests/InventoryTest/AddManyItems/[Tests][Tests.InventoryTest.AddManyItems(2461381137)]
+      name: AddManyItems(2461381137)
+      fullName: Tests.InventoryTest.AddManyItems(2461381137)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5488
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.AddManyItems][suite]
+    - id: 5484
+      uniqueId: Tests.dll/Tests/InventoryTest/AddManyItems/[Tests][Tests.InventoryTest.AddManyItems(3533564921)]
+      name: AddManyItems(3533564921)
+      fullName: Tests.InventoryTest.AddManyItems(3533564921)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5488
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.AddManyItems][suite]
+    - id: 5485
+      uniqueId: Tests.dll/Tests/InventoryTest/AddManyItems/[Tests][Tests.InventoryTest.AddManyItems(3341444004)]
+      name: AddManyItems(3341444004)
+      fullName: Tests.InventoryTest.AddManyItems(3341444004)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5488
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.AddManyItems][suite]
+    - id: 5486
+      uniqueId: Tests.dll/Tests/InventoryTest/AddManyItems/[Tests][Tests.InventoryTest.AddManyItems(3811142031)]
+      name: AddManyItems(3811142031)
+      fullName: Tests.InventoryTest.AddManyItems(3811142031)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5488
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.AddManyItems][suite]
+    - id: 5487
+      uniqueId: Tests.dll/Tests/InventoryTest/AddManyItems/[Tests][Tests.InventoryTest.AddManyItems(3518938283)]
+      name: AddManyItems(3518938283)
+      fullName: Tests.InventoryTest.AddManyItems(3518938283)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5488
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.AddManyItems][suite]
+    - id: 1003
+      uniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.AddOneItem]
+      name: AddOneItem
+      fullName: Tests.InventoryTest.AddOneItem
+      resultStatus: 1
+      duration: 0.0002157
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.InventoryTest][suite]
+    - id: 1042
+      uniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.EmptyAfterClear]
+      name: EmptyAfterClear
+      fullName: Tests.InventoryTest.EmptyAfterClear
+      resultStatus: 1
+      duration: 0.0001051
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.InventoryTest][suite]
+    - id: 1041
+      uniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyDifferentItems][suite]
+      name: RemoveManyDifferentItems
+      fullName: Tests.InventoryTest.RemoveManyDifferentItems
+      resultStatus: 1
+      duration: 0.0131282
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.InventoryTest][suite]
+    - id: 5377
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyDifferentItems/[Tests][Tests.InventoryTest.RemoveManyDifferentItems(2)]
+      name: RemoveManyDifferentItems(2)
+      fullName: Tests.InventoryTest.RemoveManyDifferentItems(2)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5381
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyDifferentItems][suite]
+    - id: 5446
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyDifferentItems/[Tests][Tests.InventoryTest.RemoveManyDifferentItems(4)]
+      name: RemoveManyDifferentItems(4)
+      fullName: Tests.InventoryTest.RemoveManyDifferentItems(4)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5451
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyDifferentItems][suite]
+    - id: 5518
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyDifferentItems/[Tests][Tests.InventoryTest.RemoveManyDifferentItems(7)]
+      name: RemoveManyDifferentItems(7)
+      fullName: Tests.InventoryTest.RemoveManyDifferentItems(7)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5521
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyDifferentItems][suite]
+    - id: 5519
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyDifferentItems/[Tests][Tests.InventoryTest.RemoveManyDifferentItems(4)]2
+      name: RemoveManyDifferentItems(4)
+      fullName: Tests.InventoryTest.RemoveManyDifferentItems(4 GeneratedTestCase2)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5521
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyDifferentItems][suite]
+    - id: 5520
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyDifferentItems/[Tests][Tests.InventoryTest.RemoveManyDifferentItems(5)]
+      name: RemoveManyDifferentItems(5)
+      fullName: Tests.InventoryTest.RemoveManyDifferentItems(5)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5521
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyDifferentItems][suite]
+    - id: 1035
+      uniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+      name: RemoveManyItems
+      fullName: Tests.InventoryTest.RemoveManyItems
+      resultStatus: 1
+      duration: 0.0357708
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.InventoryTest][suite]
+    - id: 5490
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(801112723,687470539)]
+      name: RemoveManyItems(801112723,687470539)
+      fullName: Tests.InventoryTest.RemoveManyItems(801112723,687470539)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5491
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(801112723,321858904)]
+      name: RemoveManyItems(801112723,321858904)
+      fullName: Tests.InventoryTest.RemoveManyItems(801112723,321858904)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5492
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(801112723,1099137907)]
+      name: RemoveManyItems(801112723,1099137907)
+      fullName: Tests.InventoryTest.RemoveManyItems(801112723,1099137907)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5493
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(801112723,1554546159)]
+      name: RemoveManyItems(801112723,1554546159)
+      fullName: Tests.InventoryTest.RemoveManyItems(801112723,1554546159)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5494
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(801112723,1060086522)]
+      name: RemoveManyItems(801112723,1060086522)
+      fullName: Tests.InventoryTest.RemoveManyItems(801112723,1060086522)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5495
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(2042389275,687470539)]
+      name: RemoveManyItems(2042389275,687470539)
+      fullName: Tests.InventoryTest.RemoveManyItems(2042389275,687470539)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5496
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(2042389275,321858904)]
+      name: RemoveManyItems(2042389275,321858904)
+      fullName: Tests.InventoryTest.RemoveManyItems(2042389275,321858904)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5497
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(2042389275,1099137907)]
+      name: RemoveManyItems(2042389275,1099137907)
+      fullName: Tests.InventoryTest.RemoveManyItems(2042389275,1099137907)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5498
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(2042389275,1554546159)]
+      name: RemoveManyItems(2042389275,1554546159)
+      fullName: Tests.InventoryTest.RemoveManyItems(2042389275,1554546159)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5499
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(2042389275,1060086522)]
+      name: RemoveManyItems(2042389275,1060086522)
+      fullName: Tests.InventoryTest.RemoveManyItems(2042389275,1060086522)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5500
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(465174038,687470539)]
+      name: RemoveManyItems(465174038,687470539)
+      fullName: Tests.InventoryTest.RemoveManyItems(465174038,687470539)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5501
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(465174038,321858904)]
+      name: RemoveManyItems(465174038,321858904)
+      fullName: Tests.InventoryTest.RemoveManyItems(465174038,321858904)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5502
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(465174038,1099137907)]
+      name: RemoveManyItems(465174038,1099137907)
+      fullName: Tests.InventoryTest.RemoveManyItems(465174038,1099137907)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5503
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(465174038,1554546159)]
+      name: RemoveManyItems(465174038,1554546159)
+      fullName: Tests.InventoryTest.RemoveManyItems(465174038,1554546159)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5504
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(465174038,1060086522)]
+      name: RemoveManyItems(465174038,1060086522)
+      fullName: Tests.InventoryTest.RemoveManyItems(465174038,1060086522)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5505
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(1258374792,687470539)]
+      name: RemoveManyItems(1258374792,687470539)
+      fullName: Tests.InventoryTest.RemoveManyItems(1258374792,687470539)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5506
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(1258374792,321858904)]
+      name: RemoveManyItems(1258374792,321858904)
+      fullName: Tests.InventoryTest.RemoveManyItems(1258374792,321858904)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5507
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(1258374792,1099137907)]
+      name: RemoveManyItems(1258374792,1099137907)
+      fullName: Tests.InventoryTest.RemoveManyItems(1258374792,1099137907)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5508
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(1258374792,1554546159)]
+      name: RemoveManyItems(1258374792,1554546159)
+      fullName: Tests.InventoryTest.RemoveManyItems(1258374792,1554546159)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5509
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(1258374792,1060086522)]
+      name: RemoveManyItems(1258374792,1060086522)
+      fullName: Tests.InventoryTest.RemoveManyItems(1258374792,1060086522)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5510
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(1709645375,687470539)]
+      name: RemoveManyItems(1709645375,687470539)
+      fullName: Tests.InventoryTest.RemoveManyItems(1709645375,687470539)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5511
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(1709645375,321858904)]
+      name: RemoveManyItems(1709645375,321858904)
+      fullName: Tests.InventoryTest.RemoveManyItems(1709645375,321858904)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5512
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(1709645375,1099137907)]
+      name: RemoveManyItems(1709645375,1099137907)
+      fullName: Tests.InventoryTest.RemoveManyItems(1709645375,1099137907)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5513
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(1709645375,1554546159)]
+      name: RemoveManyItems(1709645375,1554546159)
+      fullName: Tests.InventoryTest.RemoveManyItems(1709645375,1554546159)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 5514
+      uniqueId: Tests.dll/Tests/InventoryTest/RemoveManyItems/[Tests][Tests.InventoryTest.RemoveManyItems(1709645375,1060086522)]
+      name: RemoveManyItems(1709645375,1060086522)
+      fullName: Tests.InventoryTest.RemoveManyItems(1709645375,1060086522)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5515
+      parentUniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveManyItems][suite]
+    - id: 1009
+      uniqueId: Tests.dll/Tests/InventoryTest/[Tests][Tests.InventoryTest.RemoveOneItem]
+      name: RemoveOneItem
+      fullName: Tests.InventoryTest.RemoveOneItem
+      resultStatus: 1
+      duration: 0.0002716
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.InventoryTest][suite]
+    - id: 1009
+      uniqueId: Tests.dll/Tests/[Tests][Tests.ItemSlotTest][suite]
+      name: ItemSlotTest
+      fullName: Tests.ItemSlotTest
+      resultStatus: 1
+      duration: 0.0475511
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1015
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1015
+      uniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.AddAmountOfItems][suite]
+      name: AddAmountOfItems
+      fullName: Tests.ItemSlotTest.AddAmountOfItems
+      resultStatus: 1
+      duration: 0.0045875
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ItemSlotTest][suite]
+    - id: 5524
+      uniqueId: Tests.dll/Tests/ItemSlotTest/AddAmountOfItems/[Tests][Tests.ItemSlotTest.AddAmountOfItems(4116904346)]
+      name: AddAmountOfItems(4116904346)
+      fullName: Tests.ItemSlotTest.AddAmountOfItems(4116904346)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5529
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.AddAmountOfItems][suite]
+    - id: 5525
+      uniqueId: Tests.dll/Tests/ItemSlotTest/AddAmountOfItems/[Tests][Tests.ItemSlotTest.AddAmountOfItems(1715055674)]
+      name: AddAmountOfItems(1715055674)
+      fullName: Tests.ItemSlotTest.AddAmountOfItems(1715055674)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5529
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.AddAmountOfItems][suite]
+    - id: 5526
+      uniqueId: Tests.dll/Tests/ItemSlotTest/AddAmountOfItems/[Tests][Tests.ItemSlotTest.AddAmountOfItems(3836625553)]
+      name: AddAmountOfItems(3836625553)
+      fullName: Tests.ItemSlotTest.AddAmountOfItems(3836625553)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5529
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.AddAmountOfItems][suite]
+    - id: 5527
+      uniqueId: Tests.dll/Tests/ItemSlotTest/AddAmountOfItems/[Tests][Tests.ItemSlotTest.AddAmountOfItems(3761332532)]
+      name: AddAmountOfItems(3761332532)
+      fullName: Tests.ItemSlotTest.AddAmountOfItems(3761332532)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5529
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.AddAmountOfItems][suite]
+    - id: 5528
+      uniqueId: Tests.dll/Tests/ItemSlotTest/AddAmountOfItems/[Tests][Tests.ItemSlotTest.AddAmountOfItems(3465522174)]
+      name: AddAmountOfItems(3465522174)
+      fullName: Tests.ItemSlotTest.AddAmountOfItems(3465522174)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5529
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.AddAmountOfItems][suite]
+    - id: 1063
+      uniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.EmptyAfterClear]
+      name: EmptyAfterClear
+      fullName: Tests.ItemSlotTest.EmptyAfterClear
+      resultStatus: 1
+      duration: 0.000123
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1043
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ItemSlotTest][suite]
+    - id: 1062
+      uniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.EmptyAfterRemoving][suite]
+      name: EmptyAfterRemoving
+      fullName: Tests.ItemSlotTest.EmptyAfterRemoving
+      resultStatus: 1
+      duration: 0.011927
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1043
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ItemSlotTest][suite]
+    - id: 5537
+      uniqueId: Tests.dll/Tests/ItemSlotTest/EmptyAfterRemoving/[Tests][Tests.ItemSlotTest.EmptyAfterRemoving(14)]
+      name: EmptyAfterRemoving(14)
+      fullName: Tests.ItemSlotTest.EmptyAfterRemoving(14)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5542
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.EmptyAfterRemoving][suite]
+    - id: 5538
+      uniqueId: Tests.dll/Tests/ItemSlotTest/EmptyAfterRemoving/[Tests][Tests.ItemSlotTest.EmptyAfterRemoving(63)]
+      name: EmptyAfterRemoving(63)
+      fullName: Tests.ItemSlotTest.EmptyAfterRemoving(63)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5542
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.EmptyAfterRemoving][suite]
+    - id: 5539
+      uniqueId: Tests.dll/Tests/ItemSlotTest/EmptyAfterRemoving/[Tests][Tests.ItemSlotTest.EmptyAfterRemoving(56)]
+      name: EmptyAfterRemoving(56)
+      fullName: Tests.ItemSlotTest.EmptyAfterRemoving(56)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5542
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.EmptyAfterRemoving][suite]
+    - id: 5540
+      uniqueId: Tests.dll/Tests/ItemSlotTest/EmptyAfterRemoving/[Tests][Tests.ItemSlotTest.EmptyAfterRemoving(18)]
+      name: EmptyAfterRemoving(18)
+      fullName: Tests.ItemSlotTest.EmptyAfterRemoving(18)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5542
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.EmptyAfterRemoving][suite]
+    - id: 5541
+      uniqueId: Tests.dll/Tests/ItemSlotTest/EmptyAfterRemoving/[Tests][Tests.ItemSlotTest.EmptyAfterRemoving(78)]
+      name: EmptyAfterRemoving(78)
+      fullName: Tests.ItemSlotTest.EmptyAfterRemoving(78)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5542
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.EmptyAfterRemoving][suite]
+    - id: 1016
+      uniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.ItemIsTheItemAdded]
+      name: ItemIsTheItemAdded
+      fullName: Tests.ItemSlotTest.ItemIsTheItemAdded
+      resultStatus: 1
+      duration: 0.0001094
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ItemSlotTest][suite]
+    - id: 1022
+      uniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.RemoveAmountOfItems][suite]
+      name: RemoveAmountOfItems
+      fullName: Tests.ItemSlotTest.RemoveAmountOfItems
+      resultStatus: 1
+      duration: 0.0120727
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ItemSlotTest][suite]
+    - id: 5531
+      uniqueId: Tests.dll/Tests/ItemSlotTest/RemoveAmountOfItems/[Tests][Tests.ItemSlotTest.RemoveAmountOfItems(38)]
+      name: RemoveAmountOfItems(38)
+      fullName: Tests.ItemSlotTest.RemoveAmountOfItems(38)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5536
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.RemoveAmountOfItems][suite]
+    - id: 5532
+      uniqueId: Tests.dll/Tests/ItemSlotTest/RemoveAmountOfItems/[Tests][Tests.ItemSlotTest.RemoveAmountOfItems(43)]
+      name: RemoveAmountOfItems(43)
+      fullName: Tests.ItemSlotTest.RemoveAmountOfItems(43)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5536
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.RemoveAmountOfItems][suite]
+    - id: 5533
+      uniqueId: Tests.dll/Tests/ItemSlotTest/RemoveAmountOfItems/[Tests][Tests.ItemSlotTest.RemoveAmountOfItems(73)]
+      name: RemoveAmountOfItems(73)
+      fullName: Tests.ItemSlotTest.RemoveAmountOfItems(73)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5536
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.RemoveAmountOfItems][suite]
+    - id: 5463
+      uniqueId: Tests.dll/Tests/ItemSlotTest/RemoveAmountOfItems/[Tests][Tests.ItemSlotTest.RemoveAmountOfItems(11)]
+      name: RemoveAmountOfItems(11)
+      fullName: Tests.ItemSlotTest.RemoveAmountOfItems(11)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5466
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.RemoveAmountOfItems][suite]
+    - id: 5535
+      uniqueId: Tests.dll/Tests/ItemSlotTest/RemoveAmountOfItems/[Tests][Tests.ItemSlotTest.RemoveAmountOfItems(51)]
+      name: RemoveAmountOfItems(51)
+      fullName: Tests.ItemSlotTest.RemoveAmountOfItems(51)
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 5536
+      parentUniqueId: Tests.dll/Tests/ItemSlotTest/[Tests][Tests.ItemSlotTest.RemoveAmountOfItems][suite]
+    - id: 1001
       uniqueId: Tests.dll/Tests/[Tests][Tests.ReflectionTest][suite]
       name: ReflectionTest
       fullName: Tests.ReflectionTest
       resultStatus: 1
-      duration: 0.1244869
+      duration: 0.0089286
       messages: 
       output: 
       stacktrace: 
@@ -537,7 +1600,7 @@ MonoBehaviour:
       name: ReflectionTestSimplePasses
       fullName: Tests.ReflectionTest.ReflectionTestSimplePasses
       resultStatus: 1
-      duration: 0.0127871
+      duration: 0.000302
       messages: 
       output: 
       stacktrace: 
@@ -549,13 +1612,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.ReflectionTest][suite]
-    m_ResultText: ReflectionTestSimplePasses (0.013s)
+    m_ResultText: AddOneItem (0.000s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a9a944d2
-      m_LastClickedID: -767252055
-      m_ExpandedIDs: e557abf78359db419d2529784e89af78ffffff7f
+      m_SelectedIDs: 99043d37
+      m_LastClickedID: 926745753
+      m_ExpandedIDs: 2f804eb5d766cbcffa5bf6e6e557abf7dbc753078359db419d2529784e89af78ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -613,7 +1676,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 60
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -730,7 +1793,7 @@ MonoBehaviour:
     x: 1920
     y: 73
     width: 265
-    height: 488
+    height: 415
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 1
   m_WindowGUID: 3b16f3867197e6240983456bcfd00e05
@@ -846,14 +1909,14 @@ MonoBehaviour:
     x: 2882
     y: 73
     width: 403
-    height: 488
+    height: 415
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fc470000
+      m_SelectedIDs: 1c480000
       m_LastClickedID: 0
-      m_ExpandedIDs: b0b6ffffe6e6ffff04ebffff02efffff20f3ffffc6f8ffff54fbffff
+      m_ExpandedIDs: dc8afdff568dfdff408ffdff9a91fdff8493fdffbe95fdffb097fdff2a9afdff149cfdfffe9dfdfff09ffdffb8a4fdffc2a6fdff3ca9fdffb6abfdffa0adfdff40b2fdffe2b4fdff5cb7fdffd6b9fdffc8bbfdff48befdff12c0fdff56c7fdff74cafdff4ecdfdff2ad5fdffaedafdff04defdff5ae1fdff28e4fdff6ce9fdff4cf3fdff8a11feffae1afeff3225feff382efeff6e38feff523bfeff323ffeff1444feff984dfeff1055feff4258feff625efeff6263feff4468feff466dfeff2872feff1877feff267cfeff447ffeffb083feff3a88feffe28cfeff8a91feff0a94feff2697feffc299feffbe9cfeffc29ffeff98a2feff76a5feff7ea8feff48aafeffc8aefeff2eb3feff0ab6feffeabafeff54bdfefffac5feffd6ccfeff1ad0feff80d4feffe4d7feff08dbfeff4edffeff46e3feff6ae6feffb0e8fefff4ebfeff92effeffb0f3feffaef7feff34fcfeff78fffeffde03ffffda06ffff1e0affff640effff6011ffffc215ffff641affff7223ffff4426ffff8628ffffaa2bffffaa2effff3e33ffffd435fffff03cffff663fffff6c41ffff0c49ffff424effff9c52fffff656ffff505bffffca5fffff0663ffff4266ffff9a6afffff46effff0676ffff607affffd47effff0483ffff5687ffffa88bffffd68fffff0494ffff0a9cffff38a0ffff1ea4ffff70a8ffff9eacffff42b2ffffeeb7ffff9abeffff94c2ffff40c5ffffc6c7ffffa2caffff96cdffff94cfffff46d3ffff48d7ffff4adbffff2edeffff50e2ffff14e5ffffcee8ffffb4ecffff7af0ffff14fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -898,9 +1961,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1920
-    y: 582
+    y: 509
     width: 462
-    height: 457
+    height: 530
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -915,7 +1978,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tests
+    - Assets/Scripts/Core/Inventory/Displays
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -929,7 +1992,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: ec760000
     m_LastClickedID: 30444
-    m_ExpandedIDs: 0000000070470000724700007447000076470000784700007a4700007c470000
+    m_ExpandedIDs: 000000008447000086470000884700008a4700008c4700008e47000090470000924700009447000096470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -954,24 +2017,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 113}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000070470000724700007447000076470000784700007a4700007c470000ec4a0000f04a00001c4b0000
+    m_ExpandedIDs: ffffffff000000008447000086470000884700008a4700008c4700008e4700009047000092470000944700009647000000480000f64e0000d4710000d671000002720000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: IItem
+      m_OriginalName: IItem
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 5812
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 2}
     m_SearchString: 
@@ -1034,9 +2097,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 2383
-    y: 582
+    y: 509
     width: 902
-    height: 457
+    height: 530
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &23
 MonoBehaviour:

@@ -8,12 +8,18 @@ namespace Core.Inventory.Data
     [Serializable]
     public class Inventory : IItemContainer<Item>
     {
-        public Action<ItemSlot> onSlotAdded;
-        public Action<ItemSlot> onSlotRemoved;
+        private List<ItemType>   allowedTypes;
+        public  Action<ItemSlot> onSlotAdded;
+        public  Action<ItemSlot> onSlotRemoved;
+
+        public Inventory() { allowedTypes                                 = new List<ItemType>(); }
+        public Inventory(List<ItemType> allowedTypes) { this.allowedTypes = allowedTypes; }
 
         public List<ItemSlot> Slots { get; } = new List<ItemSlot>();
 
-        public bool IsEmpty => Slots?.Count == 0 || Slots.Where(s => s.IsEmpty).Count() != 0;
+        public bool IsEmpty => Slots?.Count == 0 || Slots.Where(s => !s.IsEmpty).Count() != 0;
+
+        #region IItemContainer
 
         public uint Contains(Item item)
         {
@@ -27,6 +33,9 @@ namespace Core.Inventory.Data
 
         public uint Add(Item item, uint amount)
         {
+            if (!Allows(item.itemType))
+                return amount;
+
             foreach (ItemSlot slot in Slots.Where(s => s.Item == item))
                 amount = slot.Add(item, amount);
 
@@ -39,7 +48,6 @@ namespace Core.Inventory.Data
         public uint Remove(Item item, uint amount)
         {
             foreach (ItemSlot slot in Slots.Where(s => s.Item == item))
-
                 amount = slot.Remove(item, amount);
 
             CullEmptySlots();
@@ -55,14 +63,27 @@ namespace Core.Inventory.Data
             Slots.Clear();
         }
 
-        public ItemSlot CreateItemSlot()
+        private bool Allows(ItemType itemType) => allowedTypes.Count == 0 || allowedTypes.Contains(itemType);
+
+        #endregion
+
+        #region ItemSlots
+
+        private ItemSlot CreateItemSlot()
         {
             ItemSlot slot = new ItemSlot();
+            slot.onEmpty += KillSlot;
 
             Slots.Add(slot);
             onSlotAdded?.Invoke(slot);
 
             return slot;
+        }
+
+        private void KillSlot(ItemSlot slot)
+        {
+            Slots.Remove(slot);
+            onSlotRemoved?.Invoke(slot);
         }
 
         private void CullEmptySlots()
@@ -73,10 +94,9 @@ namespace Core.Inventory.Data
                 emptySlots.Add(slot);
 
             foreach (ItemSlot slot in emptySlots)
-            {
-                Slots.Remove(slot);
-                onSlotRemoved?.Invoke(slot);
-            }
+                KillSlot(slot);
         }
+
+        #endregion
     }
 }

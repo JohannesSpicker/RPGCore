@@ -7,7 +7,7 @@ namespace Core.Inventory.Data
     /// </summary>
     public class Item : IItem
     {
-        private ItemType itemType;
+        public ItemType itemType;
 
         public Item(ItemType itemType) { this.itemType = itemType; }
     }

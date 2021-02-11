@@ -1,17 +1,17 @@
 ﻿using System;
 using Core.Inventory.Interfaces;
-using UnityEngine;
 
 namespace Core.Inventory.Data
 {
     [Serializable]
     public class ItemSlot : IItemContainer<Item>
     {
-        private uint         amount;
-        private Item         item;
-        
-        public Action<uint> onAmountChanged;
-        public Action<Item> onItemChanged;
+        private uint amount;
+        private Item item;
+
+        public Action<uint>     onAmountChanged;
+        public Action<Item>     onItemChanged;
+        public Action<ItemSlot> onEmpty;
 
         public uint Amount
         {
@@ -20,6 +20,9 @@ namespace Core.Inventory.Data
             {
                 amount = value;
                 onAmountChanged?.Invoke(amount);
+
+                if (amount == 0)
+                    onEmpty?.Invoke(this);
             }
         }
 
@@ -63,6 +66,13 @@ namespace Core.Inventory.Data
         {
             Item   = null;
             Amount = 0;
+        }
+
+        public void HandOver(ItemSlot receiver, uint amount)
+        {
+            uint available = Math.Min(amount, Amount);
+            uint moved     = available - receiver.Add(Item, available);
+            Remove(Item, moved);
         }
     }
 }

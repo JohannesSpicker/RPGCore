@@ -13,6 +13,9 @@
               <e p="Character.asmdef" t="Include" />
               <e p="Character.cs" t="Include" />
             </e>
+            <e p="Encounters" t="Include">
+              <e p="Encounter.cs" t="Include" />
+            </e>
             <e p="Inventory" t="Include">
               <e p="Data" t="Include">
                 <e p="Inventory.cs" t="Include" />
@@ -26,6 +29,7 @@
                 <e p="InventoryDisplay.cs" t="Include" />
                 <e p="InventoryDisplays.asmdef" t="Include" />
                 <e p="SlotDisplay.cs" t="Include" />
+                <e p="SlotDisplayEmbellishment.cs" t="Include" />
               </e>
               <e p="Interfaces" t="Include">
                 <e p="IItem.cs" t="Include" />
@@ -34,10 +38,11 @@
               </e>
             </e>
             <e p="Tools" t="Include">
+              <e p="ElegantPrefabObjectPool.cs" t="Include" />
               <e p="Names.cs" t="Include" />
+              <e p="ObjectPool.cs" t="Include" />
               <e p="Observable.cs" t="Include" />
               <e p="PrefabObjectPool.cs" t="Include" />
-              <e p="StaticObjectPool.cs" t="Include" />
               <e p="Tools.asmdef" t="Include" />
             </e>
           </e>

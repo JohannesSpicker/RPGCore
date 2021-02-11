@@ -3,7 +3,6 @@ using System.Linq;
 using Core.Inventory.Data;
 using Core.Tools;
 using UnityEngine;
-using UnityTemplateProjects.Core.Inventory.Displays;
 
 namespace Core.Inventory.Displays
 {
