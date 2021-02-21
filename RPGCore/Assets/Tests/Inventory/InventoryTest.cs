@@ -1,12 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Core.Inventory.Data;
 using NUnit.Framework;
+using UnityEngine;
+using Random = System.Random;
 
 namespace Tests
 {
     public class InventoryTest
     {
+        #region Clearing
+
+        [Test]
+        public void EmptyAfterClear()
+        {
+            Setup(out Inventory inventory, out Item item);
+
+            inventory.Add(item, 1);
+            inventory.Clear();
+
+            Assert.IsTrue(inventory.IsEmpty);
+            Assert.AreEqual(0, inventory.Contains(item));
+            Assert.AreEqual(0, inventory.Slots.Count);
+        }
+
+        [Test]
+        public void EmptyAfterClearManyItems([Random(1, 8, 5)] int amountOfItems)
+        {
+            Setup(out Inventory inventory, out Item[] items, amountOfItems);
+
+            Dictionary<Item, uint> addDictionary    = new Dictionary<Item, uint>();
+            Dictionary<Item, uint> removeDictionary = new Dictionary<Item, uint>();
+
+            Random randomizer = new Random();
+            Item   randomItem = items[randomizer.Next(0, items.Length - 1)];
+
+            foreach (Item item in items)
+                inventory.Add(randomItem, (uint) randomizer.Next(0, int.MaxValue / 8));
+
+            inventory.Clear();
+
+            Assert.IsTrue(inventory.IsEmpty);
+            Assert.AreEqual(0, inventory.Slots.Count);
+        }
+
+        #endregion
+
         #region Adding
 
         [Test]
@@ -85,24 +123,13 @@ namespace Tests
         }
 
         #endregion
-        
-        [Test]
-        public void EmptyAfterClear()
-        {
-            Setup(out Inventory inventory, out Item item);
 
-            inventory.Add(item, 1);
-            inventory.Clear();
-
-            Assert.IsTrue(inventory.IsEmpty);
-            Assert.AreEqual(inventory.Contains(item), 0);
-        }
         #region Setup
 
         private static void Setup(out Inventory inventory, out Item item)
         {
             inventory = new Inventory();
-            item      = new Item(new ItemType());
+            item      = ScriptableObject.CreateInstance<Item>();
         }
 
         private static void Setup(out Inventory inventory, out Item[] items, int numberOfItems)
@@ -111,7 +138,7 @@ namespace Tests
             items     = new Item[numberOfItems];
 
             for (int i = 0; i < items.Length; i++)
-                items[i] = new Item(new ItemType());
+                items[i] = ScriptableObject.CreateInstance<Item>();
         }
 
         #endregion

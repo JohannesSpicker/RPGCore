@@ -12,22 +12,19 @@ namespace Core.Inventory.Displays
         {
             slotDisplay = GetComponent<SlotDisplay>();
 
-            slotDisplay.onSelect             += OnSelect;
-            slotDisplay.Slot.onEmpty         += OnEmpty;
-            slotDisplay.Slot.onAmountChanged += OnAmountChanged;
-            slotDisplay.Slot.onItemChanged   += OnItemChanged;
+            slotDisplay.OnSelect             += OnSelect;
+            slotDisplay.Slot.OnAmountChanged += OnAmountChanged;
+            slotDisplay.Slot.OnItemChanged   += OnItemChanged;
         }
 
         protected virtual void OnDestroy()
         {
-            slotDisplay.onSelect             -= OnSelect;
-            slotDisplay.Slot.onEmpty         -= OnEmpty;
-            slotDisplay.Slot.onAmountChanged -= OnAmountChanged;
-            slotDisplay.Slot.onItemChanged   -= OnItemChanged;
+            slotDisplay.OnSelect             -= OnSelect;
+            slotDisplay.Slot.OnAmountChanged -= OnAmountChanged;
+            slotDisplay.Slot.OnItemChanged   -= OnItemChanged;
         }
 
         protected abstract void OnSelect(SlotDisplay slotDisplay);
-        protected abstract void OnEmpty(ItemSlot     slot);
         protected abstract void OnAmountChanged(uint amount);
         protected abstract void OnItemChanged(Item   item);
     }

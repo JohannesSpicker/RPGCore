@@ -21,14 +21,14 @@ namespace Core.Inventory.Displays
 
         private PrefabObjectPool<SlotDisplay> slotDisplays;
 
-        private void Awake() => slotDisplays = new PrefabObjectPool<SlotDisplay>(slotDisplayPrefab, transform);
-
+        private PrefabObjectPool<SlotDisplay> SlotDisplays => slotDisplays ?? CreateObjectPool();
+        
         private void OnEnable()  => s_inventoryDisplays.Add(this);
         private void OnDisable() => s_inventoryDisplays.Remove(this);
 
         public void Setup(Data.Inventory inventory)
         {
-            if (inventory != null)
+            if (this.inventory != null)
                 Deregister();
 
             this.inventory = inventory;
@@ -41,22 +41,29 @@ namespace Core.Inventory.Displays
 
         private void Register()
         {
-            inventory.onSlotAdded   += AddSlotDisplay;
-            inventory.onSlotRemoved += RemoveSlotDisplay;
+            inventory.OnSlotAdded   += AddSlotDisplay;
+            inventory.OnSlotRemoved += RemoveSlotDisplay;
         }
 
         private void Deregister()
         {
-            inventory.onSlotAdded   -= AddSlotDisplay;
-            inventory.onSlotRemoved -= RemoveSlotDisplay;
+            inventory.OnSlotAdded   -= AddSlotDisplay;
+            inventory.OnSlotRemoved -= RemoveSlotDisplay;
         }
 
-        private void AddSlotDisplay(ItemSlot slot) => slotDisplays.Next().Setup(slot);
+        private void AddSlotDisplay(ItemSlot slot) => SlotDisplays.Next().Setup(slot);
 
         private void RemoveSlotDisplay(ItemSlot slot)
         {
-            foreach (SlotDisplay slotDisplay in slotDisplays.inUse.Where(s => s.Slot == slot))
+            foreach (SlotDisplay slotDisplay in SlotDisplays.inUse.Where(s => s.Slot == slot))
                 slotDisplays.Release(slotDisplay);
+        }
+
+        private PrefabObjectPool<SlotDisplay> CreateObjectPool()
+        {
+            slotDisplays = new PrefabObjectPool<SlotDisplay>(slotDisplayPrefab, transform);
+
+            return slotDisplays;
         }
     }
 }

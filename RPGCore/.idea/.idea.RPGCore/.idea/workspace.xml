@@ -30,10 +30,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/f2/3de14424/Reflect.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/5d/5425c633/RandomAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/ad/f88710f2/IObservable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/c9/9101106d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.19/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351E49E2-A5BF-4FD6-BEAB-B458CE2255F3/d4/e055e298/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tests/Inventory/InventoryTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/5d/7403239b/Randomizer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/52/5b3323b9/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/c3/672ebfb3/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/41/7fc2973b/ITestExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -41,26 +44,35 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Interfaces/IItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Reflection.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/InventoryTest.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/ItemType.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/ReflectionTest.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Names.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Interfaces/IItemContainer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Observable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Tests/Inventory/ItemSlotTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Character/Character.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/PrefabObjectPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Item.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/StartInventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Tests/Inventory/InventoryTest.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/ItemSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/ElegantPrefabObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/StaticObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/ObjectPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Encounters/Encounter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/SlotDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Interfaces/IItemContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/Inventory/ItemSlotTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/SlotDisplayEmbellishment.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Character/Attribute.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Character/DerivedStat.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Character/Stats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Character/EgoStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Character/MorphStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Dice/Dice.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Character/Reputation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/Inventory/InventoryTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/ObjectPools/ElegantPrefabObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Observable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/SlotDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Item.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/ItemType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/InventoryProvider.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/InventoryDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Inventory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/ItemSlot.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Names.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nIwAb3O2sjxK7XD4s8WNbURMvz" />
@@ -76,9 +88,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.rider.settings.RiderSettingsDialogFactory$filter$stub$1" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -112,7 +124,14 @@
       <workItem from="1612789513347" duration="3382000" />
       <workItem from="1612864927577" duration="24486000" />
       <workItem from="1612975333406" duration="3356000" />
-      <workItem from="1613001025799" duration="3775000" />
+      <workItem from="1613001025799" duration="4113000" />
+      <workItem from="1613042649346" duration="15872000" />
+      <workItem from="1613143284992" duration="1860000" />
+      <workItem from="1613305425325" duration="1981000" />
+      <workItem from="1613307935157" duration="11162000" />
+      <workItem from="1613385993240" duration="7192000" />
+      <workItem from="1613503179705" duration="696000" />
+      <workItem from="1613572674465" duration="33000" />
     </task>
     <servers />
   </component>
@@ -132,5 +151,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

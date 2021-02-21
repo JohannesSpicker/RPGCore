@@ -10,11 +10,18 @@
         <e p="Scripts" t="Include">
           <e p="Core" t="Include">
             <e p="Character" t="Include">
+              <e p="Attribute.cs" t="Include" />
               <e p="Character.asmdef" t="Include" />
               <e p="Character.cs" t="Include" />
+              <e p="DerivedStat.cs" t="Include" />
+            </e>
+            <e p="Dice" t="Include">
+              <e p="Dice.asmdef" t="Include" />
+              <e p="Dice.cs" t="Include" />
             </e>
             <e p="Encounters" t="Include">
               <e p="Encounter.cs" t="Include" />
+              <e p="Encounters.asmdef" t="Include" />
             </e>
             <e p="Inventory" t="Include">
               <e p="Data" t="Include">
@@ -28,6 +35,7 @@
               <e p="Displays" t="Include">
                 <e p="InventoryDisplay.cs" t="Include" />
                 <e p="InventoryDisplays.asmdef" t="Include" />
+                <e p="InventoryProvider.cs" t="Include" />
                 <e p="SlotDisplay.cs" t="Include" />
                 <e p="SlotDisplayEmbellishment.cs" t="Include" />
               </e>
@@ -38,12 +46,23 @@
               </e>
             </e>
             <e p="Tools" t="Include">
-              <e p="ElegantPrefabObjectPool.cs" t="Include" />
               <e p="Names.cs" t="Include" />
-              <e p="ObjectPool.cs" t="Include" />
+              <e p="ObjectPools" t="Include">
+                <e p="ElegantPrefabObjectPool.cs" t="Include" />
+                <e p="ObjectPool.cs" t="Include" />
+                <e p="PrefabObjectPool.cs" t="Include" />
+                <e p="ToolsObjectPools.asmdef" t="Include" />
+              </e>
               <e p="Observable.cs" t="Include" />
-              <e p="PrefabObjectPool.cs" t="Include" />
               <e p="Tools.asmdef" t="Include" />
+            </e>
+          </e>
+          <e p="EclipsePhase" t="Include">
+            <e p="Character" t="Include">
+              <e p="EclipsePhaseCharacter.asmdef" t="Include" />
+              <e p="EgoStats.cs" t="Include" />
+              <e p="MorphStats.cs" t="Include" />
+              <e p="Reputation.cs" t="Include" />
             </e>
           </e>
           <e p="SimpleCameraController.cs" t="Include" />
@@ -51,10 +70,42 @@
         <e p="Tests" t="Include">
           <e p="Inventory" t="Include">
             <e p="InventoryTest.cs" t="Include" />
+            <e p="InventoryTests.asmdef" t="Include" />
             <e p="ItemSlotTest.cs" t="Include" />
           </e>
           <e p="ReflectionTest.cs" t="Include" />
           <e p="Tests.asmdef" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
         </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">
@@ -66,15 +117,20 @@
         </e>
       </e>
       <e p="Character.csproj" t="IncludeRecursive" />
+      <e p="Dice.csproj" t="IncludeRecursive" />
+      <e p="EclipsePhaseCharacter.csproj" t="IncludeRecursive" />
+      <e p="Encounters.csproj" t="IncludeRecursive" />
       <e p="InventoryData.csproj" t="IncludeRecursive" />
       <e p="InventoryDisplays.csproj" t="IncludeRecursive" />
       <e p="InventoryInterfaces.csproj" t="IncludeRecursive" />
+      <e p="InventoryTests.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="RPGCore.sln" t="IncludeFlat" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
       <e p="Tests.csproj" t="IncludeRecursive" />
       <e p="Tools.csproj" t="IncludeRecursive" />
+      <e p="ToolsObjectPools.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

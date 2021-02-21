@@ -1,17 +1,14 @@
 ﻿using System;
 using Core.Inventory.Interfaces;
+using UnityEngine;
 
 namespace Core.Inventory.Data
 {
     [Serializable]
     public class ItemSlot : IItemContainer<Item>
     {
-        private uint amount;
-        private Item item;
-
-        public Action<uint>     onAmountChanged;
-        public Action<Item>     onItemChanged;
-        public Action<ItemSlot> onEmpty;
+        [SerializeField] private uint amount;
+        [SerializeField] private Item item;
 
         public uint Amount
         {
@@ -19,10 +16,7 @@ namespace Core.Inventory.Data
             private set
             {
                 amount = value;
-                onAmountChanged?.Invoke(amount);
-
-                if (amount == 0)
-                    onEmpty?.Invoke(this);
+                OnAmountChanged?.Invoke(amount);
             }
         }
 
@@ -32,11 +26,12 @@ namespace Core.Inventory.Data
             private set
             {
                 item = value;
-                onItemChanged?.Invoke(item);
+                OnItemChanged?.Invoke(item);
             }
         }
 
-        public bool IsEmpty             => Item == null || Amount == 0;
+        public bool IsEmpty => Item == null || Amount == 0;
+
         public uint Contains(Item item) => Item == item ? Amount : 0;
 
         public uint Add(Item item, uint amount)
@@ -67,6 +62,9 @@ namespace Core.Inventory.Data
             Item   = null;
             Amount = 0;
         }
+
+        public event Action<uint> OnAmountChanged;
+        public event Action<Item> OnItemChanged;
 
         public void HandOver(ItemSlot receiver, uint amount)
         {

@@ -16,5 +16,11 @@ namespace Core.Tools
 
         public IEnumerable<T> GetAllValues() => GetType().GetFields().Where(fi => fi.FieldType == typeof(T))
                                                          .Select(t => (T) t.GetValue(this));
+
+        //trying to incorporate arrays:
+        /*
+        public IEnumerable<T> GetAllValues() => GetType().GetFields().Where(fi => fi.FieldType == typeof(T))
+                                                                .Select(t => (T) t.GetValue(this)).Union(chairs).Union(unnamedSlots);
+        */
     }
 }

@@ -7,12 +7,12 @@ namespace Core.Inventory.Displays
 {
     public class SlotDisplay : MonoBehaviour
     {
-        private TextMeshPro amountDisplay;
+       [SerializeField] private TMP_Text  amountDisplay;
 
-        private TextMeshPro nameDisplay;
-        public  ItemSlot    Slot { get; private set; }
+       [SerializeField] private TMP_Text nameDisplay;
+        public                  ItemSlot Slot { get; private set; }
 
-        public Action<SlotDisplay> onSelect;
+        public event Action<SlotDisplay> OnSelect;
         
         public void Setup(ItemSlot slot)
         {
@@ -21,13 +21,13 @@ namespace Core.Inventory.Displays
             RefreshAmountDisplay(slot.Amount);
             RefreshItemDisplay(slot.Item);
 
-            slot.onAmountChanged += RefreshAmountDisplay;
-            slot.onItemChanged   += RefreshItemDisplay;
+            slot.OnAmountChanged += RefreshAmountDisplay;
+            slot.OnItemChanged   += RefreshItemDisplay;
         }
 
         private void RefreshAmountDisplay(uint amount) => amountDisplay.text = amount.ToString();
         private void RefreshItemDisplay(Item   item)   => nameDisplay.text = item.ToString();
 
-        public void Select() => onSelect?.Invoke(this);
+        public void Select() => OnSelect?.Invoke(this);
     }
 }

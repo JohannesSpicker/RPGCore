@@ -2,7 +2,6 @@
 using System.Linq;
 using Core.Tools;
 using NUnit.Framework;
-using UnityEngine;
 
 namespace Tests
 {
@@ -19,7 +18,7 @@ namespace Tests
             Assert.Contains(names.cupboard, list);
             Assert.Contains(names.window,   list);
             Assert.Contains(names.table,    list);
-            
+
             Assert.AreEqual(list.Count, 4);
         }
     }

@@ -1,6 +1,6 @@
-﻿using System;
-using Core.Inventory.Data;
+﻿using Core.Inventory.Data;
 using NUnit.Framework;
+using UnityEngine;
 
 namespace Tests
 {
@@ -43,7 +43,7 @@ namespace Tests
 
         [Test]
         public void EmptyAfterRemoving([Random(0u, 100u, 5)]
-                                           uint amount)
+                                       uint amount)
         {
             Setup(out ItemSlot itemSlot, out Item item);
 
@@ -71,7 +71,7 @@ namespace Tests
         private static void Setup(out ItemSlot itemSlot, out Item item)
         {
             itemSlot = new ItemSlot();
-            item     = new Item(new ItemType());
+            item     = ScriptableObject.CreateInstance<Item>();
         }
     }
 }

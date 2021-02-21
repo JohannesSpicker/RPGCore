@@ -4,8 +4,8 @@ namespace Core.Tools
 {
     public class Observable<T>
     {
-        private Action<T> onValueChanged;
-        private T         value;
+        private event Action<T> OnValueChanged;
+        private T                       value;
 
         public T Value
         {
@@ -13,25 +13,27 @@ namespace Core.Tools
             set
             {
                 this.value = value;
-                onValueChanged?.Invoke(Value);
+                OnValueChanged?.Invoke(Value);
             }
         }
 
-        public void Subscribe(Action<T> observer) => onValueChanged += observer;
-        public void Unsubscribe(Action<T> observer) => onValueChanged -= observer;
+        public void Subscribe(Action<T>   observer) => OnValueChanged += observer;
+        public void Unsubscribe(Action<T> observer) => OnValueChanged -= observer;
     }
 
     public class Observer<T>
     {
-        private Action<T>     action;
-        private Observable<T> observable;
-        
+        private readonly Action<T>     action;
+        private readonly Observable<T> observable;
+
         public Observer(Observable<T> observable, Action<T> action)
         {
             this.action     = action;
             this.observable = observable;
-            
+
             observable.Subscribe(action);
         }
+
+        public void Deconstruct() => observable.Unsubscribe(action);
     }
 }

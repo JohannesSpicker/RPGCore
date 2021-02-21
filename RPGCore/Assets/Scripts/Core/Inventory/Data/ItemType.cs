@@ -1,7 +1,8 @@
-﻿namespace Core.Inventory.Data
+﻿using System;
+using UnityEngine;
+
+namespace Core.Inventory.Data
 {
-    public class ItemType
-    {
-        
-    }
+    [Serializable, CreateAssetMenu(fileName = "New ItemType", menuName = "Core/Inventory/ItemType", order = 0)]
+    public class ItemType : ScriptableObject { }
 }
