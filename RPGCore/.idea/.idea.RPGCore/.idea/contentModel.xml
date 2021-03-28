@@ -11,8 +11,8 @@
           <e p="Core" t="Include">
             <e p="Character" t="Include">
               <e p="Attribute.cs" t="Include" />
+              <e p="BaseCharacter.cs" t="Include" />
               <e p="Character.asmdef" t="Include" />
-              <e p="Character.cs" t="Include" />
               <e p="DerivedStat.cs" t="Include" />
             </e>
             <e p="Dice" t="Include">
@@ -25,6 +25,7 @@
             </e>
             <e p="Inventory" t="Include">
               <e p="Data" t="Include">
+                <e p="Armor.cs" t="Include" />
                 <e p="Inventory.cs" t="Include" />
                 <e p="InventoryData.asmdef" t="Include" />
                 <e p="Item.cs" t="Include" />
@@ -59,10 +60,17 @@
           </e>
           <e p="EclipsePhase" t="Include">
             <e p="Character" t="Include">
+              <e p="Character.cs" t="Include" />
               <e p="EclipsePhaseCharacter.asmdef" t="Include" />
-              <e p="EgoStats.cs" t="Include" />
-              <e p="MorphStats.cs" t="Include" />
               <e p="Reputation.cs" t="Include" />
+            </e>
+            <e p="Checks" t="Include">
+              <e p="Check.cs" t="Include" />
+              <e p="Checks.asmdef" t="Include" />
+            </e>
+            <e p="EclipsePhase.asmdef" t="Include" />
+            <e p="Global" t="Include">
+              <e p="Magnitude.cs" t="Include" />
             </e>
           </e>
           <e p="SimpleCameraController.cs" t="Include" />
@@ -117,7 +125,9 @@
         </e>
       </e>
       <e p="Character.csproj" t="IncludeRecursive" />
+      <e p="Checks.csproj" t="IncludeRecursive" />
       <e p="Dice.csproj" t="IncludeRecursive" />
+      <e p="EclipsePhase.csproj" t="IncludeRecursive" />
       <e p="EclipsePhaseCharacter.csproj" t="IncludeRecursive" />
       <e p="Encounters.csproj" t="IncludeRecursive" />
       <e p="InventoryData.csproj" t="IncludeRecursive" />

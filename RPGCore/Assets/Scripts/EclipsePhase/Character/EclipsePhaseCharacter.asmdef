@@ -1,3 +1,16 @@
 {
-	"name": "EclipsePhaseCharacter"
+    "name": "EclipsePhaseCharacter",
+    "rootNamespace": "",
+    "references": [
+        "GUID:63cf0773e8b53c042ab4ad66cab0ef4e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

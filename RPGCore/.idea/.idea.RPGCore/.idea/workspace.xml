@@ -25,19 +25,25 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Interfaces/IItemContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0EBEB27C-A6DF-45BB-AEEC-500DC98FF733/35/11410d07/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/33/d73d2e8a/TestContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/d9/58c3bdfa/BaseInvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.19/UnityEngine.TestRunner/NUnitExtensions/Runner/UnityLogCheckDelegatingCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/32/7e33a584/IObserver`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/f2/3de14424/Reflect.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/5d/5425c633/RandomAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/7a/cb56fa7e/InvokableCallList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/ad/f88710f2/IObservable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/c9/9101106d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.19/UnityEngine.TestRunner/NUnitExtensions/Commands/BeforeAfterTestCommandBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/34/a2132551/UnityEventBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/351E49E2-A5BF-4FD6-BEAB-B458CE2255F3/d4/e055e298/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tests/Inventory/InventoryTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/5d/7403239b/Randomizer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/52/5b3323b9/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/c8/1b077017/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/c3/672ebfb3/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/8e/5fe35277/UnityAction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10B6135E-6343-4FDB-A4FC-6C109928AB3B/41/7fc2973b/ITestExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Engines/Unity Versions/2020.2.1f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -58,21 +64,31 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Character/Attribute.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Character/DerivedStat.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Character/Stats.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Character/EgoStats.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Character/MorphStats.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Dice/Dice.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Character/Reputation.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/Inventory/InventoryTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/ObjectPools/ElegantPrefabObjectPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Observable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/SlotDisplay.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Item.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/ItemType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/InventoryProvider.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Displays/InventoryDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/ItemSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Names.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/WhatAreActions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/WhatAreActions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tools/Observable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Item.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Inventory/Data/Armor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Character/EgoStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Character/MorphStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Character/BbaseCharacter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Core/Character/BaseCharacter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Character/Reputation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Character/Check.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Character/Magnitude.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Global/Magnitude.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Character/Character.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EclipsePhase/Checks/Check.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nIwAb3O2sjxK7XD4s8WNbURMvz" />
@@ -132,6 +148,12 @@
       <workItem from="1613385993240" duration="7192000" />
       <workItem from="1613503179705" duration="696000" />
       <workItem from="1613572674465" duration="33000" />
+      <workItem from="1614114542098" duration="638000" />
+      <workItem from="1614424799568" duration="2058000" />
+      <workItem from="1614611670266" duration="2500000" />
+      <workItem from="1615153211056" duration="4264000" />
+      <workItem from="1615581063724" duration="649000" />
+      <workItem from="1615727929497" duration="13488000" />
     </task>
     <servers />
   </component>
